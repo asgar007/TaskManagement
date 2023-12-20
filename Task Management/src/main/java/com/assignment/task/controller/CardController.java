@@ -40,11 +40,11 @@ public class CardController {
                         .data(cardService.moveCardWithinTaskListInBoard(moveCardRequest.getCardId(), moveCardRequest.getTaskListId())).build());
     }
 
-    @DeleteMapping("{cardId}")
-    public void deleteCard(@PathVariable String cardId){
-        cardService.deleteCard(cardId);
-//                .body(SuccessResponse.builder().error(false).statusCode(HttpStatus.OK.toString())
-//                        .message("Card is deleted successfully")
-//                        .data().build());
-    }
+//     @DeleteMapping("{cardId}")
+//     public void deleteCard(@PathVariable String cardId){
+//         cardService.deleteCard(cardId);
+// //                .body(SuccessResponse.builder().error(false).statusCode(HttpStatus.OK.toString())
+// //                        .message("Card is deleted successfully")
+// //                        .data().build());
+//     }
 }
